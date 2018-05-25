@@ -1,0 +1,44 @@
+.navContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  margin: 20px 20px 0px 20px;
+}
+.links {
+  grid-column: 11/13;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.titleStyle {
+  grid-column: 1/4;
+  font-size: 30px;
+  font-family: 'Avenir', sans-serif;
+  letter-spacing: 6px;
+  text-decoration: none;
+  color: #000;
+}
+.linkStyle {
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #707070;
+  margin-right: 10px;
+}
+.image {
+  height: 28px;
+  margin-left: 8px;
+  width: auto;
+}
+@media screen and (max-width: 950px) {
+  .links {
+    grid-column: 10/12;
+  }
+}
+@media screen and (max-width: 500px) {
+  .links {
+    display: none;
+  }
+}
