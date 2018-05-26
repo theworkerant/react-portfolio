@@ -4,19 +4,19 @@ import Form from './Form'
 import { Comment } from './common'
 
 class Home extends Component {
-  componentDidMount = () => {
+  componentDidMount() {
     this.props.getComments()
   }
-
-  componentWillReceiveProps = (nextProps) => {
-    if (nextProps.comments !== this.props.comments) {
+  componentDidUpdate(prevProps) {
+    if (prevProps.comments.comments.length
+      !== this.props.comments.comments.length) {
       this.props.getComments()
     }
   }
 
   renderComments = () => {
     return (
-      this.props.comments.comments.map(comment => {
+      this.props.comments.comments.map((comment) => {
         return (
           <Comment
             key={comment.id}

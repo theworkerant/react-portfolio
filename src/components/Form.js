@@ -56,19 +56,21 @@ class Form extends Component {
   render() {
     const { handleSubmit } = this.props
     return (
-      <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-        <Field
-          label="Name"
-          name="name"
-          component={this.renderNameField}
-        />
-        <Field
-          label="Comment"
-          name="comment"
-          component={this.renderCommentField}
-        />
-        <Button>SUBMIT</Button>
-      </form>
+      <div className={container}>
+        <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+          <Field
+            label="Name"
+            name="name"
+            component={this.renderNameField}
+          />
+          <Field
+            label="Comment"
+            name="comment"
+            component={this.renderCommentField}
+          />
+          <Button>SUBMIT</Button>
+        </form>
+      </div>
     )
   }
 }

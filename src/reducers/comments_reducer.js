@@ -1,4 +1,4 @@
-import { GET_COMMENTS } from '../actions'
+import { GET_COMMENTS, POST_COMMENT } from '../actions'
 
 const initialState = {
   comments: []
@@ -10,6 +10,12 @@ export default (state = initialState, action) => {
     return {
       ...state,
       comments: action.payload
+    }
+    case POST_COMMENT:
+    console.log('posted');
+    return {
+      ...state,
+      comments: state.comments.concat(action.payload)
     }
     default:
     return state

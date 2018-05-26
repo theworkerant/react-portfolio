@@ -22,4 +22,10 @@ export const postComment = ({ name, comment }) => async dispatch => {
       'Accept': 'application/json',
     }
   })
+  const json = await response.json()
+  console.log(json);
+  dispatch({
+    type: POST_COMMENT,
+    payload: json
+  })
 }
