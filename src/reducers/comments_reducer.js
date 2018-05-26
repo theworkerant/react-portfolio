@@ -12,7 +12,6 @@ export default (state = initialState, action) => {
       comments: action.payload
     }
     case POST_COMMENT:
-    console.log('posted');
     return {
       ...state,
       comments: state.comments.concat(action.payload)

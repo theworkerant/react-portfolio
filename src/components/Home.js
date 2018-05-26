@@ -4,10 +4,10 @@ import Form from './Form'
 import { Comment } from './common'
 
 class Home extends Component {
-  componentDidMount() {
+  componentDidMount = () => {
     this.props.getComments()
   }
-  componentDidUpdate(prevProps) {
+  componentDidUpdate = (prevProps) => {
     if (prevProps.comments.comments.length
       !== this.props.comments.comments.length) {
       this.props.getComments()

@@ -23,7 +23,6 @@ export const postComment = ({ name, comment }) => async dispatch => {
     }
   })
   const json = await response.json()
-  console.log(json);
   dispatch({
     type: POST_COMMENT,
     payload: json
