@@ -5,18 +5,26 @@ import {
   innerContainer
 } from './index.css'
 
-import HomeContainer from './containers/HomeContainer'
+import Home from './components/Home'
 import Nav from './components/Nav'
+import RitmoContainer from './containers/RitmoContainer'
 
 export default class App extends Component {
   render() {
     return (
       <Router>
         <div className={container}>
-          <div className={innerContainer}>
-            <Nav />
-            <HomeContainer />
-          </div>
+          <Nav />
+          <Route exact path="/" render={() => (
+            <div className={innerContainer}>
+              <Home />
+            </div>
+          )} />
+          <Route exact path="/ritmo" render={() => (
+            <div className={innerContainer}>
+              <RitmoContainer />
+            </div>
+          )} />
         </div>
       </Router>
     )

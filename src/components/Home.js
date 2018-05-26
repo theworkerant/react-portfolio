@@ -1,42 +1,35 @@
 import React, { Component } from 'react'
 
-import Form from './Form'
-import { Comment } from './common'
+import { ProjectCard } from './common'
+import ritmo from '../assets/ritmo-mockup.jpg'
+import shmup from '../assets/shmup.jpg'
+
+import {
+  homeContainer,
+  aboutContainer,
+  projectsContainer,
+  aboutMe
+} from './styles/Home.css'
 
 class Home extends Component {
-  componentDidMount = () => {
-    this.props.getComments()
-  }
-  componentDidUpdate = (prevProps) => {
-    if (prevProps.comments.comments.length
-      !== this.props.comments.comments.length) {
-      this.props.getComments()
-    }
-  }
-
-  renderComments = () => {
-    return (
-      this.props.comments.comments.map((comment) => {
-        return (
-          <Comment
-            key={comment.id}
-            username={comment.username}
-            comment={comment.comment}
-          />
-        )
-      })
-    )
-  }
-
   render() {
     return (
-      <div>
-        <div>
-          <Form />
+      <div className={homeContainer}>
+        <div className={aboutContainer}>
+          <div className={aboutMe}>
+            Junior Full-Stack Developer. Strong background in React and React Native development. Looking for the opportunity to contribute to an awesome software development team.
+          </div>
         </div>
-        <ul>
-          {this.renderComments()}
-        </ul>
+        <div className={projectsContainer}>
+          <ProjectCard
+            linkPath="/ritmo"
+            imageSource={ritmo}
+          />
+          <ProjectCard
+            linkPath="/phaser"
+            imageSource={shmup}
+          />
+        </div>
       </div>
     )
   }
