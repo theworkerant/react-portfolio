@@ -6,10 +6,10 @@ import { postComment } from '../actions'
 import {
   container,
   inputContainer,
-  formContainer,
   inputStyle,
   labelStyle,
-  inputCommentStyle
+  inputCommentStyle,
+  errorStyle
 } from './styles/Form.css'
 
 import { Button } from './common'
@@ -77,11 +77,11 @@ class Form extends Component {
 
 const validate = (values) => {
   const errors = {}
-  if (!values.username) {
-    errors.username = 'Enter a name'
+  if (!values.name) {
+    errors.name = <span className={errorStyle}>Enter a name</span>
   }
   if (!values.comment) {
-    errors.comment = 'Enter a comment'
+    errors.comment = <span className={errorStyle}>Enter a comment</span>
   }
   return errors
 }
