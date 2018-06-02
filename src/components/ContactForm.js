@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Field, reduxForm, reset } from 'redux-form'
 import { connect } from 'react-redux'
-import { postComment } from '../actions'
+import { sendEmail } from '../actions'
 
 import {
   container,
@@ -9,12 +9,16 @@ import {
   inputStyle,
   labelStyle,
   inputCommentStyle,
-  errorStyle
-} from './styles/Form.css'
+  errorStyle,
+  notification
+} from './styles/ContactForm.css'
 
 import { Button } from './common'
 
-class Form extends Component {
+class ContactForm extends Component {
+  state = {
+    sent: false
+  }
 
   renderSingleField(field) {
     const { meta: { touched, error } } = field
@@ -50,11 +54,16 @@ class Form extends Component {
   }
 
   onSubmit(values) {
-    this.props.postComment(values)
+    this.props.sendEmail(values)
+    this.setState({
+      sent: true
+    })
   }
 
   render() {
     const { handleSubmit } = this.props
+    const sentMessage = this.state.sent ? 'Thanks!' : ''
+
     return (
       <div className={container}>
         <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
@@ -64,24 +73,30 @@ class Form extends Component {
             component={this.renderSingleField}
           />
           <Field
-            label="Company / Association"
-            name="company"
+            label="Email"
+            name="email"
             component={this.renderSingleField}
           />
           <Field
-            label="Comment"
-            name="comment"
+            label="Phone"
+            name="phone"
+            component={this.renderSingleField}
+          />
+          <Field
+            label="Message"
+            name="message"
             component={this.renderCommentField}
           />
           <Button>SUBMIT</Button>
         </form>
+        <span className={notification}>{sentMessage}</span>
       </div>
     )
   }
 }
 
 const afterSubmit = (result, dispatch) => {
-  dispatch(reset('CommentsForm'))
+  dispatch(reset('ContactForm'))
 }
 
 const validate = (values) => {
@@ -89,19 +104,22 @@ const validate = (values) => {
   if (!values.name) {
     errors.name = <span className={errorStyle}>Enter a name</span>
   }
-  if (!values.comment) {
-    errors.comment = <span className={errorStyle}>Enter a comment</span>
+  if (!values.email) {
+    errors.email = <span className={errorStyle}>Enter a email</span>
   }
-  if (!values.company) {
-    errors.company = <span className={errorStyle}>Enter a company</span>
+  if (!values.phone) {
+    errors.phone = <span className={errorStyle}>Enter a phone number</span>
+  }
+  if (!values.message) {
+    errors.message = <span className={errorStyle}>Enter a message</span>
   }
   return errors
 }
 
 export default reduxForm({
   validate,
-  form: 'CommentsForm',
+  form: 'ContactForm',
   onSubmitSuccess: afterSubmit
 })(
-  connect(null, { postComment })(Form)
+  connect(null, { sendEmail })(ContactForm)
 )

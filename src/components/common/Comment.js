@@ -2,11 +2,15 @@ import React from 'react'
 import {
   container,
   userNameContainer,
+  companyContainer,
   commentContainer,
+  nameStyle,
+  dateStyle,
+  companyStyle,
   dateTime
 } from './styles/Comment.css'
 
-const Comment = ({ username, comment, date }) => {
+const Comment = ({ name, comment, company, date }) => {
   const parseDate = () => {
     const datePosted = `
       ${date.slice(5, 7)} / ${date.slice(8, 10)} / ${date.slice(0, 4)}
@@ -23,12 +27,17 @@ const Comment = ({ username, comment, date }) => {
   return (
     <li className={container}>
       <div className={userNameContainer}>
-        <div>          
-          {username}
+        <div className={companyContainer}>
+          <span className={nameStyle}>
+            {name}
+          </span>
+          <span className={companyStyle}>
+            {company}
+          </span>
         </div>
-        <div>
+        <span className={dateStyle}>
           {parseDate()}
-        </div>
+        </span>
       </div>
       <div className={commentContainer}>
         {comment}

@@ -8,10 +8,12 @@ export const getComments = () => async dispatch => {
     payload: json
   })
 }
+
 export const POST_COMMENT = 'post_comment'
-export const postComment = ({ name, comment }) => async dispatch => {
+export const postComment = ({ name, company, comment }) => async dispatch => {
   let body = {
-    username: name,
+    name,
+    company,
     comment
   }
   const response = await fetch('http://localhost:5000/comments', {
@@ -26,5 +28,23 @@ export const postComment = ({ name, comment }) => async dispatch => {
   dispatch({
     type: POST_COMMENT,
     payload: json
+  })
+}
+
+export const sendEmail = (values) => async dispatch => {
+  const { name, email, phone, message } = values
+  let body = {
+    name,
+    email,
+    phone,
+    message
+  }
+  const respone = await fetch('http://localhost:5000/send', {
+    method: 'POST',
+    body: JSON.stringify(body),
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    }
   })
 }

@@ -8,6 +8,10 @@ import {
 import Home from './components/Home'
 import Nav from './components/Nav'
 import RitmoContainer from './containers/RitmoContainer'
+import ContactContainer from './containers/ContactContainer'
+import PhaserContainer from './containers/PhaserContainer'
+
+import Contact from './components/Contact'
 
 export default class App extends Component {
   render() {
@@ -23,6 +27,16 @@ export default class App extends Component {
           <Route exact path="/ritmo" render={() => (
             <div className={innerContainer}>
               <RitmoContainer />
+            </div>
+          )} />
+          <Route exact path="/phaser" render={() => (
+            <div className={innerContainer}>
+              <PhaserContainer />
+            </div>
+          )} />
+          <Route exact path="/contact" render={() => (
+            <div className={innerContainer}>
+              <Contact />
             </div>
           )} />
         </div>

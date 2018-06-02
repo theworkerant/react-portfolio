@@ -1,4 +1,5 @@
 export * from './Comment'
 export * from './Button'
 export * from './ProjectCard'
-export * from './Image'
+export * from './MobileImage'
+export * from './DesktopImage'
