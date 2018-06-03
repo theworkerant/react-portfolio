@@ -14,7 +14,7 @@ import {
 
 import { Button } from './common'
 
-class Form extends Component {
+class CommentForm extends Component {
 
   renderSingleField(field) {
     const { meta: { touched, error } } = field
@@ -81,7 +81,7 @@ class Form extends Component {
 }
 
 const afterSubmit = (result, dispatch) => {
-  dispatch(reset('CommentsForm'))
+  dispatch(reset('CommentForm'))
 }
 
 const validate = (values) => {
@@ -100,8 +100,8 @@ const validate = (values) => {
 
 export default reduxForm({
   validate,
-  form: 'CommentsForm',
+  form: 'RitmoForm',
   onSubmitSuccess: afterSubmit
 })(
-  connect(null, { postComment })(Form)
+  connect(null, { postComment })(CommentForm)
 )

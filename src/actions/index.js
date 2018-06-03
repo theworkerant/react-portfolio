@@ -10,11 +10,12 @@ export const getComments = () => async dispatch => {
 }
 
 export const POST_COMMENT = 'post_comment'
-export const postComment = ({ name, company, comment }) => async dispatch => {
+export const postComment = ({ name, company, comment, projectId }) => async dispatch => {
   let body = {
     name,
     company,
-    comment
+    comment,
+    project_id: projectId
   }
   const response = await fetch('http://localhost:5000/comments', {
     method: 'POST',

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Form from './Form'
+import CommentForm from './CommentForm'
 import {
   Comment,
   DesktopImage
@@ -69,7 +69,7 @@ class Phaser extends Component {
 
 
           <span className={commentHeader}>LEAVE A COMMENT</span>
-          <Form />
+          <CommentForm />
           <div className={commentsContainer}>
             <ul>
               {this.renderComments()}

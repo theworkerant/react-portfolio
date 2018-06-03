@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Form from './Form'
+import CommentForm from './CommentForm'
 import {
   Comment,
   MobileImage
@@ -144,7 +144,7 @@ class Ritmo extends Component {
           </div>
 
           <span className={commentHeader}>LEAVE A COMMENT</span>
-          <Form />
+          <CommentForm projectId={1}/>
           <div className={commentsContainer}>
             <ul>
               {this.renderComments()}
