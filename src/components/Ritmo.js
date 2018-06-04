@@ -102,7 +102,7 @@ class Ritmo extends Component {
           <div className={flexText}>
             <h1 className={subHeader}>POSTING A LESSON</h1>
             <p className={text}>
-              Instructors may post lessons that will become available to students. Lessons are listed by name, date, and skill level.
+              Instructors may post lessons that will become available to students. Lessons are listed by name, date, and skill level. Lessons may also be canceled or rescinded at any time.
             </p>
           </div>
           <div className={flexRow}>
@@ -114,7 +114,8 @@ class Ritmo extends Component {
           <div className={flexRow}>
             <div className={flexText}>
               <h1 className={subHeader}>STUDENT PROFILE</h1>
-              <p className={text}>The student's profile page lists the lessons that they are registered for.</p>
+              <p className={text}>The student's profile page lists the lessons that they are registered for. Each entry expands to detail the instructor associated with that lesson and their contact details.
+              </p>
             </div>
             <MobileImage imageSource={jennyProfile} />
           </div>
@@ -122,7 +123,7 @@ class Ritmo extends Component {
           <div className={flexText}>
             <h1 className={subHeader}>INSTRUCTOR SELECTION</h1>
             <p className={text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Students may browse the list of available instructors, and their posted lessons, in order to find an appropriate match based upon style and skill level.
             </p>
           </div>
           <div className={flexRow}>
@@ -133,7 +134,9 @@ class Ritmo extends Component {
           <div className={flexRow}>
             <div className={flexText}>
               <h1 className={subHeader}>INSTRUCTOR PROFILE</h1>
-              <p className={text}>The student's profile page lists the lessons that they are registered for.</p>
+              <p className={text}>
+                The Instrcutor is able to view the lessons for which a student has registered to attend. They may also expand each entry to view the student's profile information.
+              </p>
             </div>
             <MobileImage imageSource={nigelLessons} />
           </div>
@@ -141,7 +144,7 @@ class Ritmo extends Component {
           <div className={flexText}>
             <h1 className={subHeader}>WHATS NEXT</h1>
             <p className={text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              This project could be treated with much more granularity. Filtering by instrument, as well as skill level, rather than simply listing them for the student to sort through. Maps and payment support would also be integral to the success of an app such as this.
             </p>
           </div>
 

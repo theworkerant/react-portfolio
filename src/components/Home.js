@@ -29,10 +29,7 @@ class Home extends Component {
             linkPath="/phaser"
             imageSource={shmup}
           />
-          <ProjectCard
-            linkPath="/phaser"
-            imageSource={shmup}
-          />
+          
         </div>
       </div>
     )
