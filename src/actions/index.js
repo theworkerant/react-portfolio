@@ -46,6 +46,7 @@ export const sendEmail = (values) => async dispatch => {
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
+      'Access-Control-Allow-Origin': '*'
     }
   })
 }
