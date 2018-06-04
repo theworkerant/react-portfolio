@@ -10,7 +10,7 @@ export const getComments = () => async dispatch => {
 }
 
 export const POST_COMMENT = 'post_comment'
-export const postComment = ({ name, company, comment, projectId }) => async dispatch => {
+export const postComment = ({ name, company, comment }, projectId) => async dispatch => {
   let body = {
     name,
     company,

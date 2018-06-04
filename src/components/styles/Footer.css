@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100px;
+}
+.copyContainer {
+  grid-column: 6/8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectLink {
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #707070;
+}
+.image {
+  height: 28px;
+  margin-left: 8px;
+  width: auto;
+}

@@ -45,7 +45,9 @@ class Ritmo extends Component {
 
   renderComments = () => {
     return (
-      this.props.comments.comments.map((comment) => {
+      this.props.comments.comments
+        .filter(a => a.project_id === 1)
+        .map((comment) => {
         return (
           <Comment
             key={comment.id}

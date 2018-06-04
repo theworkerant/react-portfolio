@@ -50,7 +50,7 @@ class CommentForm extends Component {
   }
 
   onSubmit(values) {
-    this.props.postComment(values)
+    this.props.postComment(values, this.props.projectId)
   }
 
   render() {
@@ -100,7 +100,7 @@ const validate = (values) => {
 
 export default reduxForm({
   validate,
-  form: 'RitmoForm',
+  form: 'CommentForm',
   onSubmitSuccess: afterSubmit
 })(
   connect(null, { postComment })(CommentForm)

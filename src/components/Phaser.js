@@ -35,7 +35,9 @@ class Phaser extends Component {
 
   renderComments = () => {
     return (
-      this.props.comments.comments.map((comment) => {
+      this.props.comments.comments
+        .filter(a => a.project_id === 2)
+        .map((comment) => {
         return (
           <Comment
             key={comment.id}
@@ -69,7 +71,7 @@ class Phaser extends Component {
 
 
           <span className={commentHeader}>LEAVE A COMMENT</span>
-          <CommentForm />
+          <CommentForm projectId={2}/>
           <div className={commentsContainer}>
             <ul>
               {this.renderComments()}

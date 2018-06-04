@@ -7,6 +7,7 @@ import {
 
 import Home from './components/Home'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 import RitmoContainer from './containers/RitmoContainer'
 import ContactContainer from './containers/ContactContainer'
 import PhaserContainer from './containers/PhaserContainer'
@@ -39,6 +40,7 @@ export default class App extends Component {
               <Contact />
             </div>
           )} />
+          <Footer />
         </div>
       </Router>
     )
