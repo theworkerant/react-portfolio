@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open --hot",
-    "deploy": "webpack --mode production && aws s3 sync --acl public-read --sse --delete ~/portfolio/new-portfolio/dist s3://nigelflippo.com"
+    "deploy": "gp && webpack --mode production && aws s3 sync --acl public-read --sse --delete ~/portfolio/new-portfolio/dist s3://nigelflippo.com"
   },
   "keywords": [],
   "author": "",

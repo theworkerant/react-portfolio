@@ -1,6 +1,6 @@
 export const GET_COMMENTS = 'get_comments'
 export const getComments = () => async dispatch => {
-  const response = await fetch('http://localhost:5000/comments')
+  const response = await fetch('https://nigel-portfolio-server.herokuapp.com/comments')
   const json = await response.json()
 
   dispatch({
@@ -17,7 +17,7 @@ export const postComment = ({ name, company, comment }, projectId) => async disp
     comment,
     project_id: projectId
   }
-  const response = await fetch('http://localhost:5000/comments', {
+  const response = await fetch('https://nigel-portfolio-server.herokuapp.com/comments', {
     method: 'POST',
     body: JSON.stringify(body),
     headers: {
@@ -40,7 +40,7 @@ export const sendEmail = (values) => async dispatch => {
     phone,
     message
   }
-  const respone = await fetch('http://localhost:5000/send', {
+  const respone = await fetch('https://nigel-portfolio-server.herokuapp.com/send', {
     method: 'POST',
     body: JSON.stringify(body),
     headers: {
