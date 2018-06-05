@@ -32,21 +32,20 @@ export const postComment = ({ name, company, comment }, projectId) => async disp
   })
 }
 
-export const sendEmail = (values) => async dispatch => {
-  const { name, email, phone, message } = values
-  let body = {
-    name,
-    email,
-    phone,
-    message
-  }
-  const respone = await fetch('https://nigel-portfolio-server.herokuapp.com/send', {
-    method: 'POST',
-    body: JSON.stringify(body),
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-      'Access-Control-Allow-Origin': '*'
-    }
-  })
-}
+// export const sendEmail = (values) => async dispatch => {
+//   const { name, email, phone, message } = values
+//   let body = {
+//     name,
+//     email,
+//     phone,
+//     message
+//   }
+//   const respone = await fetch('https://nigel-portfolio-server.herokuapp.com/send', {
+//     method: 'POST',
+//     body: JSON.stringify(body),
+//     headers: {
+//       'Content-Type': 'application/json',
+//       'Accept': 'application/json'
+//     }
+//   })
+// }

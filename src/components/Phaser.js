@@ -58,14 +58,16 @@ class Phaser extends Component {
 
           <h1 className={header}>SH'MUP THE ANTE / PLAT-FORM VALIDATION</h1>
           <p className={text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Two different browser (HTML5) games; a "shoot-em-up" retro Galaga game, as well as a "platformer" type.
           </p>
           <div className={flexRow}>
             <DesktopImage imageSource={splash} />
           </div>
           <div className={flexText}>
             <h1 className={subHeader}>PROJECT DETAILS</h1>
-            <p className={text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className={text}>
+              To build these games I used the Phaser physics and game engine, a Javascript based development tool. I used Asesprite to generate the assets, teaching myself pixel art along the way.
+            </p>
           </div>
 
 

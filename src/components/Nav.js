@@ -17,9 +17,9 @@ class Nav extends Component {
           NIGEL FLIPPO
         </Link>
         <ul className={links}>
-          <li>
+          {/* <li>
             <Link to="/contact" className={linkStyle}>CONTACT</Link>
-          </li>
+          </li> */}
           <li>
             <a href="https://github.com/nigelflippo">
               <img className={image} src={png} />
