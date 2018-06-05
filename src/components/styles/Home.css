@@ -28,7 +28,7 @@
 @media screen and (max-width: 500px) {
   .aboutContainer {
     grid-column: 2/13;
-    text-align: left;
+    text-align: center;
     margin: 10px 10px 60px 0px;
   }
 }

@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import {
   container,
-  copyContainer,
-  projectLink,
-  image
+  item
 } from './styles/Footer.css'
 import { Link } from 'react-router-dom'
 
@@ -13,13 +11,8 @@ class Footer extends Component {
   render() {
     return (
       <div className={container}>
-        <div className={copyContainer}>
-          <Link to="/" className={projectLink}>{this.props.linkName}</Link>
-          {/* <Link to="/contact" className={projectLink}>CONTACT</Link>
-          <a href="https://github.com/nigelflippo">
-            <img className={image} src={git} />
-          </a> */}
-        </div>
+        <span className={item}>flippo.nigel@gmail.com</span>
+        {/* <span className={item}>2000 Walnut St, Apt 103<br/>Boulder CO, 80302</span> */}
       </div>
     )
   }

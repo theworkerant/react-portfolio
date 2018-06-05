@@ -23,7 +23,6 @@ export default class App extends Component {
           <Route exact path="/" render={() => (
             <div className={innerContainer}>
               <Home />
-              {/* <Footer /> */}
             </div>
           )} />
           <Route exact path="/ritmo" render={() => (
@@ -43,6 +42,7 @@ export default class App extends Component {
               <Contact />
             </div>
           )} />
+          <Footer />
         </div>
       </Router>
     )

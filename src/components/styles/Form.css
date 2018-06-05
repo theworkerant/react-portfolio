@@ -71,11 +71,11 @@
     margin: 10px 40px 30px 10px;
   }
   .inputStyle {
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 2px;
   }
   .inputCommentStyle {
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 2px;
   }
 }
