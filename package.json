@@ -7,7 +7,8 @@
     "git": "git add . && git commit -m 'quick commit' && git push",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open --hot",
-    "deploy": "webpack --mode production && aws s3 sync --acl public-read --sse --delete ~/portfolio/new-portfolio/dist s3://nigelflippo.com"
+    "deploy": "webpack --mode production && aws s3 sync --acl public-read --sse --delete ~/portfolio/new-portfolio/dist s3://nigelflippo.com",
+    "shortcut": "git add . && git commit -m 'quick commit' && git push && webpack --mode production && aws s3 sync --acl public-read --sse --delete ~/portfolio/new-portfolio/dist s3://nigelflippo.com"
   },
   "keywords": [],
   "author": "",
