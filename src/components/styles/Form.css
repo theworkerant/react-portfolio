@@ -25,7 +25,6 @@
   font-size: 12px;
   padding-left: 5px;
   padding-top: 5px;
-
 }
 .labelStyle {
   font-family: 'Avenir', sans-serif;
@@ -70,5 +69,13 @@
     display: flex;
     flex-direction: row;
     margin: 10px 40px 30px 10px;
+  }
+  .inputStyle {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+  }
+  .inputCommentStyle {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
   }
 }
