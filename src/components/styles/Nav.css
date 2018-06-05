@@ -12,7 +12,7 @@
   align-items: center;
 }
 .titleStyle {
-  grid-column: 1/4;
+  grid-column: 1/5;
   font-size: 30px;
   font-family: 'Avenir', sans-serif;
   letter-spacing: 6px;

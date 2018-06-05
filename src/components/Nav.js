@@ -13,9 +13,9 @@ class Nav extends Component {
   render() {
     return (
       <div className={navContainer}>
-        <Link to="/" className={titleStyle}>
-          NIGEL FLIPPO
-        </Link>
+          <Link to="/" className={titleStyle}>
+            NIGEL FLIPPO
+          </Link>
         <ul className={links}>
           {/* <li>
             <Link to="/contact" className={linkStyle}>CONTACT</Link>
