@@ -14,7 +14,7 @@ class Footer extends Component {
     return (
       <div className={container}>
         <div className={copyContainer}>
-          <Link to="/" className={projectLink}>HOME</Link>
+          <Link to="/" className={projectLink}>{this.props.linkName}</Link>
           {/* <Link to="/contact" className={projectLink}>CONTACT</Link>
           <a href="https://github.com/nigelflippo">
             <img className={image} src={git} />

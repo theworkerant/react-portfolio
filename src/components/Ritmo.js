@@ -30,6 +30,7 @@ import nigel from '../assets/ritmo/nigel-profile.png'
 import instructors from '../assets/ritmo/instructors.png'
 import nigelLessons from '../assets/ritmo/nigel-lessons.png'
 import instructorSchedule from '../assets/ritmo/instructor-schedule.png'
+import instructorSplash from '../assets/ritmo/instructor-splash.png'
 
 class Ritmo extends Component {
   componentDidMount = () => {
@@ -84,19 +85,29 @@ class Ritmo extends Component {
               <h1 className={subHeader}>INSPIRATION</h1>
               <p className={text}>As a former performance classical musician and instructor, I felt that the music world was in need of a less antiquated way to schedule lesson times. Ritmo takes a modular approach to lessons, allowing students to pick and choose from multiple instructors and skill levels.</p>
             </div>
-            <MobileImage imageSource={instructorSchedule} />
+            <MobileImage imageSource={nigel} />
           </div>
 
           <div className={flexText}>
             <h1 className={subHeader}>SIGN UP PROCESS</h1>
             <p className={text}>
-              The first step in using Ritmo is to register as either a student or instructor. Each user may select their instrument of choice and estimable skill level. This can be edited in settings, should the student wish to pursue a new instrument.
+              The first step in using Ritmo is to register as either a student or instructor. Each user may select their instrument of choice and personal skill level. This can be edited in settings, should the student wish to pursue a new instrument.
             </p>
           </div>
           <div className={flexRow}>
             <img className={smallImage} src={signup} />
             <img className={smallImage} src={signup2} />
             <img className={smallImage} src={example} />
+          </div>
+
+          <div className={flexRow}>
+            <div className={flexText}>
+              <h1 className={subHeader}>INSTRUCTOR PROFILE</h1>
+              <p className={text}>
+                The instructor is able to view the lessons for which a student has registered to attend. They may also expand each entry to view the student's profile information.
+              </p>
+            </div>
+            <MobileImage imageSource={instructorSplash} />
           </div>
 
           <div className={flexText}>
@@ -110,14 +121,15 @@ class Ritmo extends Component {
             <img className={smallImage} src={myLessons} />
           </div>
 
-
+          <div className={flexText}>
+            <h1 className={subHeader}>STUDENT PROFILE</h1>
+            <p className={text}>
+              Students may browse the list of available instructors, and their posted lessons, in order to find an appropriate match based upon style and skill level.
+            </p>
+          </div>
           <div className={flexRow}>
-            <div className={flexText}>
-              <h1 className={subHeader}>STUDENT PROFILE</h1>
-              <p className={text}>The student's profile page lists the lessons that they are registered for. Each entry expands to detail the instructor associated with that lesson and their contact details.
-              </p>
-            </div>
-            <MobileImage imageSource={jennyProfile} />
+            <img className={smallImage} src={jennyProfile} />
+            <img className={smallImage} src={instructorSchedule} />
           </div>
 
           <div className={flexText}>
@@ -128,23 +140,13 @@ class Ritmo extends Component {
           </div>
           <div className={flexRow}>
             <img className={smallImage} src={instructors} />
-            <img className={smallImage} src={nigel} />
-          </div>
-
-          <div className={flexRow}>
-            <div className={flexText}>
-              <h1 className={subHeader}>INSTRUCTOR PROFILE</h1>
-              <p className={text}>
-                The Instrcutor is able to view the lessons for which a student has registered to attend. They may also expand each entry to view the student's profile information.
-              </p>
-            </div>
-            <MobileImage imageSource={nigelLessons} />
+            <img className={smallImage} src={nigelLessons} />
           </div>
 
           <div className={flexText}>
             <h1 className={subHeader}>WHATS NEXT</h1>
             <p className={text}>
-              This project could be treated with much more granularity. Filtering by instrument, as well as skill level, rather than simply listing them for the student to sort through. Maps and payment support would also be integral to the success of an app such as this.
+              This project could be treated with much more specificity; filtering by instrument, as well as skill level, rather than simply listing lessons for the student to sort through. Maps and payment support would also be integral to the success of such an app.
             </p>
           </div>
 
