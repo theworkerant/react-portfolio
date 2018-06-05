@@ -17,7 +17,7 @@ class Home extends Component {
       <div className={homeContainer}>
         <div className={aboutContainer}>
           <div className={aboutMe}>
-            Junior Full-Stack Developer. Strong background in React and React Native development. Looking for the opportunity to contribute to an awesome software development team.
+            Junior Full-Stack Developer. Extensive experience working with React, Express, and NodeJS.
           </div>
         </div>
         <div className={projectsContainer}>
@@ -29,7 +29,7 @@ class Home extends Component {
             linkPath="/phaser"
             imageSource={shmup}
           />
-          
+
         </div>
       </div>
     )

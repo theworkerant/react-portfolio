@@ -82,4 +82,22 @@
     justify-content: center;
     align-items: center;
   }
+  .text {
+    margin: 20px 40px 20px 40px;
+  }
+  .flexRow {
+    margin: 10px 0px 10px 0px;
+  }
+  .subHeader {
+    margin-top: 40px;
+  }
+  .smallImage {
+    height: 380px;
+  }
+  .commentHeader {
+    margin: 40px 0px 0px 15px;
+  }
+  .header {
+    font-size: 33px;
+  }
 }

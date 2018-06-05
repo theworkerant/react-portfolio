@@ -32,7 +32,7 @@
 }
 .subHeader {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 29px;
+  font-size: 26px;
   font-weight: 100;
   letter-spacing: 6px;
   line-height: 1.55;
@@ -62,7 +62,7 @@
 }
 .smallImage {
   margin: auto;
-  height: 400px;
+  height: 460px;
   width: auto;
   border-radius: 1px;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
@@ -81,5 +81,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .text {
+    margin: 20px 40px 20px 40px;
+  }
+  .flexRow {
+    margin: 10px 0px 10px 0px;
+  }
+  .subHeader {
+    margin-top: 40px;
+  }
+  .smallImage {
+    height: 380px;
+  }
+  .commentHeader {
+    margin: 40px 0px 0px 15px;
+  }
+  .header {
+    font-size: 33px;
   }
 }

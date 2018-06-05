@@ -8,6 +8,7 @@
 }
 @media screen and (max-width: 475px) {
   .imageStyle {
-    height: 400px;
+    height: 210px;
+    margin: 20px;
   }
 }

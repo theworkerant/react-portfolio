@@ -23,19 +23,19 @@ export default class App extends Component {
           <Route exact path="/" render={() => (
             <div className={innerContainer}>
               <Home />
-              <Footer />
+              {/* <Footer /> */}
             </div>
           )} />
           <Route exact path="/ritmo" render={() => (
             <div className={innerContainer}>
               <RitmoContainer />
-              <Footer linkName="HOME"/>
+              {/* <Footer linkName="HOME"/> */}
             </div>
           )} />
           <Route exact path="/phaser" render={() => (
             <div className={innerContainer}>
               <PhaserContainer />
-              <Footer linkName="HOME"/>
+              {/* <Footer linkName="HOME"/> */}
             </div>
           )} />
           <Route exact path="/contact" render={() => (

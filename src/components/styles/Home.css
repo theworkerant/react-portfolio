@@ -1,20 +1,22 @@
 .aboutMe {
   font-family: 'Avenir', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 100;
   letter-spacing: 1px;
-  line-height: 1.55;
+  line-height: 1.8;
 }
 .homeContainer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding-bottom: 50px;
 }
 .aboutContainer {
   grid-column: 2/10;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 100px;
+  margin: 40px 10px 140px 0px;
+  padding-right: 30px;
 }
 .projectsContainer {
   display: flex;
@@ -26,7 +28,7 @@
 @media screen and (max-width: 500px) {
   .aboutContainer {
     grid-column: 2/13;
-    margin-top: 40px;
     text-align: left;
+    margin: 10px 10px 60px 0px;
   }
 }
