@@ -6,6 +6,9 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 import rootReducer from './reducers/index'
+import Favicon from 'react-favicon'
+
+import favicon from './public/favicon.ico'
 
 const store = createStore(
     rootReducer,
@@ -18,7 +21,10 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <div>
+      <Favicon url={favicon} />
+      <App />
+    </div>
   </Provider>,
   document.getElementById('root')
 )
