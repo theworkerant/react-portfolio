@@ -6,11 +6,15 @@
   margin: 20px 0px 50px 0px;
   font-family: 'Avenir', sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 2px;
   text-align: center;
   color: #707070;
 }
 .item {
   margin: 3px;
+  font-size: 14px;
+}
+.header {
+  font-weight: 400;
 }
