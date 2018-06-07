@@ -17,7 +17,8 @@ import {
   flexRow,
   flexText,
   smallImage,
-  sprite
+  sprite,
+  linkStyle
 } from './styles/Phaser.css'
 
 import splash from '../assets/phaser/phaser.png'
@@ -79,6 +80,9 @@ class Phaser extends Component {
           </div>
           <div className={flexText}>
             <h1 className={subHeader}>SH'MUP THE ANTE</h1>
+            <a className={linkStyle} href="http://nf-games-portal.surge.sh/game1.html">
+              CLICK TO PLAY
+            </a>
             <p className={text}>
               Sh'mup The Ante is a Space Invaders or Galaga type arcade game. The player has a shield which degrades upon collision with enemy ships, as well as a high score that persists in local storage.
             </p>
@@ -107,6 +111,9 @@ class Phaser extends Component {
 
           <div className={flexText}>
             <h1 className={subHeader}>PLAT-FORM VALIDATION</h1>
+            <a className={linkStyle} href="http://nf-games-portal.surge.sh/game2.html">
+              CLICK TO PLAY
+            </a>
             <p className={text}>
               Plat-Form Validation is a simple platformer where the player must reach the goal while collecting the "coins". If you look closely, the player model is a sprite version of myself.
             </p>
