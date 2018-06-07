@@ -16,7 +16,8 @@ import {
   commentHeader,
   flexRow,
   flexText,
-  smallImage
+  smallImage,
+  sprite
 } from './styles/Phaser.css'
 
 import splash from '../assets/phaser/phaser.png'
@@ -25,6 +26,7 @@ import shoot from '../assets/phaser/ship-shoot.png'
 import gameOver from '../assets/phaser/game-over.png'
 import platform1 from '../assets/phaser/platform1.png'
 import platform2 from '../assets/phaser/platform2.png'
+import nigelSprite from '../assets/phaser/nigel-sheet-large.png'
 
 class Phaser extends Component {
   componentDidMount = () => {
@@ -108,6 +110,9 @@ class Phaser extends Component {
             <p className={text}>
               Plat-Form Validation is a simple platformer where the player must reach the goal while collecting the "coins". If you look closely, the player model is a sprite version of myself.
             </p>
+          </div>
+          <div className={flexRow}>
+            <img className={sprite} src={nigelSprite} />
           </div>
           <div className={flexRow}>
             <DesktopImage imageSource={platform1} />

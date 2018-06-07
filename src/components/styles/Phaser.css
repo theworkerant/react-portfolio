@@ -68,6 +68,10 @@
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
   margin: 50px;
 }
+.sprite {
+  height: 120px;
+  margin: 0px;
+}
 
 @media screen and (max-width: 475px) {
   .innerContainer {
