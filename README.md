@@ -5,6 +5,4 @@ npm install
 npm run build
 npm run start
 ```
-
-## Express Backend
-(https://github.com/nigelflippo/portfolio-express-server)[Repo]
+[Backend Repo](https://github.com/nigelflippo/portfolio-express-server)
