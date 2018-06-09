@@ -1,4 +1,4 @@
-# Redux Comment Mockup
+# React Redux Personal Portfolio w/ Comment Board
 
 ```
 npm install
